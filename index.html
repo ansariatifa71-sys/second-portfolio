@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+
+@keyframes fromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fromRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@layer utilities {
+  .animate-from-top {
+    animation: fromTop 1s ease-out both;
+  }
+
+  .animate-from-left {
+    animation: fromLeft 1s ease-out both;
+  }
+
+  .animate-from-right {
+    animation: fromRight 1s ease-out both;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+  <div
+    class="bg-gradient-to-r from-blue-300 to-violet-600  flex justify-between p-4 shadow-lg fixed top-0 left-0 right-0 border-2 border-blue-600 mt-0 rounded-lg z-50">
+    <div class="flex">
+      <p class="bg-gradient-to-r from-blue-400 to-pink-700 bg-clip-text text-transparent text-3xl font-bold">A</p>
+      <p class="text-white text-3xl font-bold">TIFA</p>
+    </div>
+
+    <ol class="flex gap-6 text-blue-600 font-bold">
+      <li class="hover:text-blue-200 hover:font-bold active:underline"><a href="Home">Home</a></li>
+      <li class="hover:text-blue-200 hover:font-bold active:underline"> <a href="about">About</a></li>
+      <li class="hover:text-blue-200 hover:font-bold active:underline"> <a href="Skill">Skill</a></li>
+      <li class="hover:text-blue-200 hover:font-bold active:underline"><a href="Contact">Contact</a></li>
+    </ol>
+    <div class="bg-blue-700 rounded-lg  text-white px-4 font-semibold p-2 ">Currently lurning</div>
+  </div>
+  <div
+    class="bg-blue-700 bg-[url('https://i.pinimg.com/1200x/03/2d/f8/032df87f6225ddb4188f4c3a502c68de.jpg')] bg-center bg-cover h-screen">
+
+    <div class="flex justify-evenly">
+      <div class="mt-40 animate-from-left">
+        <p class=" text-violet-900 font-bold text-2xl ">Hello ,i am</p>
+        <h1 class="bg-gradient-to-r from-violet-800 to-pink-600 bg-clip-text text-transparent font-bold text-9xl animate-from-top">Atifa
+        </h1>
+        <p class="text-white text-xl font-bold ">
+          AI & Data Science Student | Web Designer|Future AI Professional</p>
+        <p class="text-white mt-4">I’m naturally curious and enjoy learning by creating. Whether it's designing a
+          website,<br> experimenting with code, or
+          understanding how data can solve real-world problems,<br> I like exploring new ideas and turning them into
+          something
+          meaningful.</p>
+        <button
+          class="py-2 px-8 rounded-full hover:bg-blue-900 bg-blue-700 mt-4 text-white font-bold text-lg hover:bg-gradient-to-r from-blue-200 to-violet-600 hover:-translate-y-1 ">viwe
+          work</button>
+        <button
+          class="py-2 px-10 rounded-full hover:bg-blue-700 bg-blue-500 mt-4 text-white font-bold text-lg hover:bg-gradient-to-r from-blue-200 to-violet-600 hover:-translate-y-1 ">Contact</button>
+      </div>
+
+      <div class="rounded-t-full size-70 mt-52 relative bg-gradient-to-r from-blue-200 to-blue-600 p-[4px] animate-from-right">
+        <div class="mt-0 rounded-t-full size-full bg-black">
+          <img src="me-2.png" class="size-64 ml-4 animate-from-top">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-blue-950 w-full p-4">
+    <div class="flex justify-evenly">
+      <div
+        class="border-2 border-blue-700 transition-transform duration-100 hover:scale-110 rounded-lg hover:bg-violet-900">
+        <p
+          class="bg-gradient-to-r from-blue-400 to-violet-600 bg-clip-text text-transparent text-3xl font-bold ml-28 mt-2">
+          About me </p>
+        <p
+          class="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent text-center mt-4 hover:text-blue-200 ">
+          I'm Atifa, a first-year AI & Data Science student<br>
+          who enjoys turning ideas into useful digital<br>
+          experiences. I'm currently exploring artificial<br>
+          intelligence, data science, and web design while<br>
+          building my technical skills step by step.<br><br>
+
+          I'm naturally curious and enjoy learning by creating.<br>
+          Whether it's designing a website, experimenting<br>
+          with code, or understanding how data can solve<br>
+          real-world problems, I like exploring new ideas<br></p>
+      </div>
+      <div
+        class="rounded-lg border-2 border-blue-900 p-2 transition-transform duration-100 hover:scale-110 hover:bg-violet-950  ">
+        <p
+          class="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent text-3xl font-bold ml-28 mt-2">
+          What i do</p>
+
+        <div class="flex justify-evenly mt-2">
+          <div>
+            <ol>
+              <li><img src="icon.png" class="size-16"></li>
+              <li><img src="icon2.png" class="size-14"></li>
+              <li><img src="icon3.png" class="rounded-full size-12 mt-4"></li>
+              <li><img src="icon4.png" class="rounded-full size-12 mt-4"></li>
+            </ol>
+          </div>
+          <div class="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
+            <p class="text-xl font-bold">Data Analysis</p>
+            <p>Finding insight in data </p>
+
+            <p class="text-xl font-bold mt-4">Ai and data science</p>
+            <p>Exploring the power of data and AI</p>
+
+            <p class="text-xl font-bold mt-4">Web desing</p>
+            <p>designing beautiful & responsive website</p>
+
+            <p class="text-xl font-bold mt-4">programing</p>
+            <p>Writing cleaan efficient code </p>
+
+          </div>
+        </div>
+
+      </div>
+      <div
+        class="rounded-lg border-2 border-blue-900 p-2 transition-transform duration-100 hover:scale-110 hover:bg-violet-950 ">
+        <p
+          class="bg-gradient-to-r from-blue-400 to-violet-600 bg-clip-text text-transparent text-3xl font-bold ml-40 mt-2">
+          skills</p>
+        <div class="flex gap-4 mt-4">
+
+          <div class="rounded-full border-2 border-blue-500 px-2">
+            <div class="flex  ">
+              <img src="iimg1.png" class="size-12">
+              <p class="text-blue-300 font-bold mt-2">Python</p>
+            </div>
+          </div>
+
+          <div class="rounded-full border-2 border-blue-500 px-2">
+            <div class="flex">
+              <img src="iimg2.png" class="size-12">
+              <p class="text-blue-300  font-bold mt-2">HTML</p>
+            </div>
+          </div>
+
+          <div class="rounded-full border-2 border-blue-500 px-2">
+            <div class="flex">
+              <img src="iimg3.png" class="size-12">
+              <p class="text-blue-300 font-bold mt-2">CSS</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="flex gap-4 mt-4">
+          <div class="rounded-full border-2 border-blue-500 px-2">
+            <div class="flex">
+              <img src="iimg4.png" class="size-12">
+              <p class="text-blue-300 font-bold mt-2">Java scrip </p>
+            </div>
+          </div>
+          <div class="rounded-full border-2 border-blue-500 px-2">
+            <div class="flex">
+              <img src="iimg5.png" class="size-12">
+              <p class="text-blue-300 font-bold mt-2">SQL</p>
+            </div>
+          </div>
+          <div class="rounded-full border-2 border-blue-500 px-2">
+            <div class="flex">
+              <img src="iimg6.png" class="size-12">
+              <p class="text-blue-300 font-bold mt-2">Data analysis</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-4 mt-4">
+          <div class="rounded-full border-2 border-blue-500">
+            <div class="flex">
+              <img src="icon.png" class="size-12">
+              <p class="text-blue-300 font-bold mt-2">Machine learning</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-blue-500 text-lg font-bold p-2">Currently learning</p>
+        <div class="flex gap-6">
+          <div class="rounded-full border-2 border-blue-500 bg-blue-500/50">
+            <p class="text-blue-300 font-bold px-4">HTMl</p>
+          </div>
+
+          <div class="rounded-full border-2 border-blue-500 bg-blue-500/50">
+            <p class="text-blue-300 font-bold px-4">Java Script</p>
+          </div>
+
+          <div class="rounded-full border-2 border-blue-500 bg-blue-500/50">
+            <p class="text-blue-300 font-bold px-4">Python</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-slate-900 w-full flex justify-evenly text-blue-200 p-4 ">
+    <div
+      class="rounded-lg border-2 border-blue-900 p-2 transition-transform duration-100 hover:scale-110 hover:bg-violet-950  ">
+      <p class="text-blue-300 font-bold px-4 text-2xl ml-6">My Personality</p>
+      <p class="mt-4">Always eager to learn new things<br>
+        I love designing and building<br>
+        I value progress over perfection<br>
+        I believe in supporting others<br>
+        Big dreams, steady steps<br></p>
+    </div>
+    <div
+      class="rounded-lg border-2 border-blue-900 p-2 transition-transform duration-100 hover:scale-110 hover:bg-violet-950  ">
+      <p class="text-blue-300 font-bold px-4 text-2xl ml-10">Education</p>
+      <p class="mt-4">B.Tech – AI & Data Science<br>
+        1st Year (Data analysis ,devloper)<br>
+        Nexcore institue<br>
+        2026 – Present</p>
+    </div>
+    <div
+      class="rounded-lg border-2 border-blue-900 p-2 transition-transform duration-100 hover:scale-110 hover:bg-violet-950  ">
+      <p class="text-blue-300 font-bold px-4 text-2xl ml-20"> My Goals</p>
+      <p class="text-blue-300 font-bold mt-4">Build & Create</p>
+      <p>collaborations, and interesting conversations.</p>
+
+      <p class="text-blue-300 font-bold">Explore AI</p>
+      <p>Learn how artificial intelligence and <br>machine learning can solve real-world challenges.</p>
+
+      <p class="text-blue-300 font-bold">Grow Every Day</p>
+      <p>Improve my technical skills, creativity,<br> and problem-solving abilities through practice.</p>
+    </div>
+    <div
+      class="rounded-lg border-2 border-blue-900 p-2 transition-transform duration-100 hover:scale-110 hover:bg-violet-950  ">
+      <p class="text-blue-300 font-bold px-4 text-2xl ml-20"> My Current Focus</p>
+      <p class="text-blue-300 font-bold mt-4">Build & Create</p>
+      <ul>
+        <li>Learning Python and programming fundamentals</li>
+        <li>Practising HTML, CSS, JavaScript, and Tailwind CSS</li>
+        <li>Exploring data analysis and machine learning basics</li>
+        <li>Designing clean and responsive website layouts</li>
+        <li>Building projects to apply what I learn</li>
+      </ul>
+    </div>
+  </div>
+  <div class="bg-black w-full text-blue-200 p-4 flex justify-evenly">
+    <div class="rounded-lg border-2 border-blue-900 bg-blue-700/50 p-2 w-72  ">
+      <img
+        src="https://images.openai.com/static-rsc-4/uaZsaRL2D4YBwIxjQrG0sU44ZCfHcikE2DnssmkThO5nlXXBY3VMEo3Y2KvCezqBW6GNHfG_JlVx9heo2Xi92FAiqig9HwxM4Y22u7nT2uxCwT6GxRgEh6vAZHX0oKg-wjlLzjvmuAzMOAW43QA8pbtk4wjoAKaW6IQdeozoLUQcdlleMrPaNlbrmZmwdPbt?purpose=fullsize"
+        class="w-72 rounded-lg">
+      <p class="text-blue-300 font-bold text-2xl">Personal Portfolio Website</p>
+      <p class="mt-4">A responsive portfolio showcasing my skills,<br> interests, learning journey, and projects</p>
+      <p class="font-semibold mt-4">HTML · CSS · Tailwind CSS</p>
+    </div>
+
+    <div class="rounded-lg border-2 border-blue-900 p-2  bg-blue-700/50 w-72 ">
+      <img
+        src="https://images.openai.com/static-rsc-4/JIArb9hratUrjIg0GKhTD278zUNh74NpmkFaDMeSgW6A-LgTcWrwoUIg5nn2dtC_59gUDXAZYoNOYvGKnSn5DbWnYQPkhJpQWvYoLflLVHEc9JqR5RC8ViSQjjDMN7cUKWSb_5Uo3thaxfd5WDvpjp68Hneu5DznLhKdHAUIVuApWRPRJ-_bcl99xFKJg12O?purpose=fullsize"
+        class="w-72 rounded-lg">
+      <p class="text-blue-300 font-bold text-2xl mt-4">Product Inventory Manager</p>
+      <p class="mt-4">A Figma prototype for managing product details, prices, stock counts, and product images.</p>
+      <p class="font-semibold mt-4">Figma · Wireframing · UI Design</p>
+    </div>
+
+    <div class="rounded-lg border-2 border-blue-900 p-2  bg-blue-700/50 w-72 ">
+      <img
+        src="https://images.openai.com/static-rsc-4/DJN-gDYcND1ZI99Mv1fEpFCXsLuY5xtqsVienV5u5yMJccRE4stxhXspZMFp9fygw4aBNpPy3O8uTIIj3tLmLoQLjvZhAaLxmYY6qiqUAgRTP1YhAljfFXQfS7dj1of4WI4fIxXoAjOybEsTPqve72zIQn_Ek3R_-E2iE7xUMUAoBuPg_HGqiDVRCI2en1oL?purpose=fullsize"
+        class="w-72 rounded-lg">
+      <p class="text-blue-300 font-bold text-2xl mt-4">Python Practice Projects</p>
+
+      <p class="mt-4">Small programs and exercises created to strengthen my coding logic and programming fundamentals.
+      </p>
+      <p class="font-semibold mt-4">Python · Problem Solving</p>
+    </div>
+  </div>
+  <div class="bg-blue-950 w-full text-blue-300 p-4 flex">
+    <div>
+      <!-- footer -->
+      <p class="text-blue-300 font-bold text-3xl">Let's Connect!</p>
+      <p class="mt-4 text-xl">I'm always excited to connect with<br> people who love technology, design,<br> and
+        learning.
+      </p>
+      <p class=" text-xl">Have a project idea, collaboration <br>opportunity, or just want to say hello?<br> Feel free
+        to reach out</p>
+    </div>
+    <div>
+      <p class=" text-xl ml-28 mt-4">Email: your-email@example.com</p>
+      <p class=" text-xl ml-28 mt-4">LinkedIn: Your LinkedIn Profile</p>
+      <p class=" text-xl ml-28 mt-4">GitHub: Your GitHub Profile</p>
+    </div>
+  </div>
+  <div class="bg-blue-950 text-blue-200 p-4">
+    <hr>
+    <p class=" text-xl">Designed & Built by Atifa
+      Learning today. Building tomorrow. ✦</p>
+  </div>
+
+
+
+</body>
+
+</html>
